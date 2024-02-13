@@ -1,0 +1,191 @@
+/*Andria Vanezi 12334546*/
+html{
+    /* font shorthand 6 propteries  
+        font-style - normal, italic, oblique
+        font-variant - normal, small-caps
+        font-weight normal - bold,  100 - 900
+        font-size/line-height
+        font-family
+
+        ;Times, "Times New Roman", Georgia, serif
+        "Lucida Console", Courier, monospace;
+    */
+    /*absolute units px*/
+    font : italic small-caps bold 20px/1.5 Verdana, Arial, Helvetica, sans-serif ;
+    font-variant : normal;
+    font-style : normal;font-family : monospace;
+    
+
+     color : brown; /* Set text color to blue */
+}
+body{
+
+    width : 100%; /*sets the width of the body % relative to parent element*/
+    max-width : 1200px;/* sets the width of the body absolute units px*/
+    margin : auto; /*margin set to auto for right and left center elemnts inside their parent*/
+    padding : 0.25rem; /*rem relative to root element font size*/
+
+  
+
+}
+/*named colour*/
+/*6-HEX*/
+p{
+    color : #fa5f00;
+}
+/*3-HEX*/
+h2{
+    color: #fc9; /* same as #ffcc99 */
+}
+p{
+   
+    color: #b58; /* same as #bb5588 */
+}
+/*RGB red green blue*/
+p{
+    color : rgb(238, 130, 238);
+}
+/*RGBA alpha*/
+p{
+    color : rgba(255, 99, 71, 0.5);
+}
+/*HSL hue saturation lightness*/
+p{
+    color : hsl(147, 50%, 47%);
+}
+/*HSLA alpha*/
+p{
+    color : hsla(9, 100%, 64%, 0.6);
+}
+
+/*h1 element selector*/
+h1{
+    color : red !important; /* Set text color to red */
+    text-align: center;
+
+}
+/*h1 element selector*/
+h1{
+    color : blue; /* Set text color to blue */
+}
+/*id selector*/
+#main-heading{
+    color : purple; /* Set text color to purple */
+}
+/*class selector*/
+.headings{
+    color : orange; /* Set text color to orange */
+}
+
+iframe, video{
+    font-size : 10px;
+    width : 50%;/*sets the width of the images and videos % relative to parent element*/
+    height : 50%;/*sets the height of the images and videos % relative to parent element*/
+    height : 10rem;
+}
+
+main p{
+    color : blue;
+}
+section > p{
+    color : purple;
+}
+
+h2 ~ p{
+    color : red;
+}
+
+h2, h6, #span-h, .red-p, footer p{
+
+    color : hsl(146.5, 72.2%, 14.1%);
+
+}
+
+#section1 p{
+    color : #866c3c;
+}
+
+main > .headings{
+    color :rgb(238, 130, 238);
+}
+
+section {
+    background-color:  hsla(147, 40%, 90%, 0.1);;
+}
+section {
+    background-color: rgba(252, 252, 252, 0.1);
+}
+section{ 
+    background :hsl(147, 50%, 47%);
+}
+
+header{
+    background-image: linear-gradient(red 20%, white 10%, blue 80%) !important;
+   /* height : 20vh; 
+    width : 20vw; */
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+    margin-left : .5rem;
+    margin-right : 1.5rem;
+    margin : 1rem 1.5rem 1rem .5rem;
+    margin : 1rem 1.5rem;
+   
+    margin : 1rem 1.5rem .5rem;
+    margin : 1rem;
+
+    padding-top : 1rem;
+    padding-bottom : 1rem;
+    padding-left : .5rem;
+    padding-right : 1.5rem;
+    padding : 1rem 1.5rem 1rem .5rem;
+    padding : 1rem 1.5rem;
+   
+    padding : 1rem 1.5rem .5rem;
+    padding : 1rem;
+    
+    border-style : dashed;
+    border-bottom-style : solid;
+    border-width : .25rem;
+    border-bottom-width: .5rem;
+    border-color :black;
+    border-top-color : white;
+
+    border : 1rem solid black;
+    border-radius : 1rem;
+   
+
+}
+.main-section-figure{
+   width : 500px;  
+   border-radius : 1rem;
+   text-align: center;
+  
+
+}
+#relative-path-image{
+    background-color: aliceblue;
+    border : .25rem solid green;
+    color :green;
+}
+#absolute-path-image{
+    background-color: aqua;
+    border : .25rem solid blue;
+    color : blue;
+}
+.main-section-figure img{
+    width : 80%;
+    height : 90%;
+    padding : .5rem;
+    border-radius : 1rem;
+   
+}
+main {
+    margin-top : 2rem;
+   
+}
+#quote{
+    border : .5rem solid #b58;
+    box-shadow: 10px 10px 8px black;
+
+}
+
