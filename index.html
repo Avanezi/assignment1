@@ -1,3 +1,5 @@
+
+
 <!--Andria Vanezi 122332255 -->
 <!--Section 3 example 1-->
 <!--this is the document type declaration-->
@@ -56,8 +58,42 @@
         </h1>
         
     </header>
+    <nav>
+        <ul>
+            <li id="home-link"><a href="index.html">Home</a></li>
+            <li id="contact-link"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
      <!--this is the semantic main element that defines the body's main--> 
     <main>
+        <section>
+            <!--ordered list-->
+            <ol>
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+            </ol>
+            <!--unordered list-->
+            <ul>
+                <li>apples</li>
+                <li>oranges</li>
+                <li>pears</li>
+            </ul>
+            <!--description list-->
+            <dl>
+                <dt>Name</dt>
+                <dd>Andria Vanezi</dd>
+                <dt>Gender</dt>
+                <dd>Female</dd>
+                <dt>Phone</dt>
+                <dd>519-555-5555</dd>
+            </dl>
+        </section>
+
+
+
+
+
         <!--this is a section element nested in the main-->        
         <section id="section1">
             <!--this the second most importmant heading element-->
@@ -145,7 +181,7 @@
                 <circle cx="240" cy="100" r="90" fill="black"/>
             </svg>
         </section>
-        <section>
+        <section id="video">
             <h2>Video</h2>
             
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWK-e80ae9Y?si=t2MVfMtRY_cisFfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -158,6 +194,57 @@
      
 
     </main> 
+    <aside>
+        <h3>Links to external sites
+        </h3>
+        <ul>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        </ul>
+        <h3>Link to internal source on page</h3>
+        <a href="#section1">Examples of HTML Elements (h2)</a>
+        <h3>Link to email address</h3>
+        <a href="mailto:avanezi@conestogac.on.ca">Email Prog1247 Prof</a>
+        <h3>Link with telephone number </h3>
+        <a href="tel:519-555-8787">Call your Prof</a>
+        <h3>Link to pdf file</h3>
+        <a href="pdf/Assignment 2 HTML CSS .pdf" target="_blank">Assignment 2</a>
+        <h3>Link wrapped around image</h3>
+        <a href="https://www.youtube.com/" title="Link to Youtube" target="_blank"><img src="images/puppy.jpg" width="100" height="100"></a>
+
+        <h3>table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>column 1</th>
+                    <th>column 2</th>
+                    <th>column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>row 1 data 1</td>
+                    <td>row 1 data 2</td>
+                    <td>row 1 data 3</td>
+                </tr>
+                <tr>
+                    <td>row 2 data 1</td>
+                    <td>row 2 data 2</td>
+                    <td>row 2 data 3</td>
+                </tr>
+                <tr>
+                    <td>row 3 data 1</td>
+                    <td>row 3 data 2</td>
+                    <td>row 3 data 3</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </aside>
+
+
+
+
     <!--this is the semantic footer element that defines the body's footer-->
    
     <footer>

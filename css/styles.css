@@ -13,7 +13,8 @@ html{
     /*absolute units px*/
     font : italic small-caps bold 20px/1.5 Verdana, Arial, Helvetica, sans-serif ;
     font-variant : normal;
-    font-style : normal;font-family : monospace;
+    font-style : normal;
+    font-family : monospace;
     
 
      color : brown; /* Set text color to blue */
@@ -61,7 +62,7 @@ p{
 /*h1 element selector*/
 h1{
     color : red !important; /* Set text color to red */
-    text-align: center;
+    text-align: center;/*center-align text*/
 
 }
 /*h1 element selector*/
@@ -76,55 +77,68 @@ h1{
 .headings{
     color : orange; /* Set text color to orange */
 }
-
+#video{
+    font-size : 10px;/*parent element of the video and iframe*/
+}
 iframe, video{
-    font-size : 10px;
+  
     width : 50%;/*sets the width of the images and videos % relative to parent element*/
     height : 50%;/*sets the height of the images and videos % relative to parent element*/
-    height : 10rem;
+    height : 10em; /*em relative to parent element font size*/
 }
-
+/*descendant selector*/
 main p{
     color : blue;
 }
+/*child selector*/
 section > p{
     color : purple;
 }
-
+/*General sibling selector*/
 h2 ~ p{
     color : red;
 }
-
+/*Ajecent sibling selector*/
+h2 + p{
+    color : red;
+}
+/*multiple selector*/
 h2, h6, #span-h, .red-p, footer p{
 
     color : hsl(146.5, 72.2%, 14.1%);
 
 }
-
+/*id selector - descendant selector*/
 #section1 p{
     color : #866c3c;
 }
-
+/*type selector, child selector, class selector*/
 main > .headings{
     color :rgb(238, 130, 238);
 }
 
 section {
-    background-color:  hsla(147, 40%, 90%, 0.1);;
+    background-color:  hsla(147, 40%, 90%, 0.1); /*sets background color*/
 }
 section {
-    background-color: rgba(252, 252, 252, 0.1);
+    background-color: rgba(252, 252, 252, 0.1); /*sets background color*/
 }
 section{ 
-    background :hsl(147, 50%, 47%);
+    background :hsl(147, 50%, 47%); /*sets background color*/
 }
 
 header{
+    /*sets background color with a linear gradient */
     background-image: linear-gradient(red 20%, white 10%, blue 80%) !important;
    /* height : 20vh; 
     width : 20vw; */
+
+
+    /******BOX MODEL*****/
+    /********MARGINS****/
     margin-top : 1rem;
     margin-bottom : 1rem;
+    
     margin-left : .5rem;
     margin-right : 1.5rem;
     margin : 1rem 1.5rem 1rem .5rem;
@@ -132,7 +146,7 @@ header{
    
     margin : 1rem 1.5rem .5rem;
     margin : 1rem;
-
+ /********PADDING****/
     padding-top : 1rem;
     padding-bottom : 1rem;
     padding-left : .5rem;
@@ -142,13 +156,13 @@ header{
    
     padding : 1rem 1.5rem .5rem;
     padding : 1rem;
-    
+    /*****BORDERS******/
     border-style : dashed;
-    border-bottom-style : solid;
-    border-width : .25rem;
-    border-bottom-width: .5rem;
-    border-color :black;
-    border-top-color : white;
+    border-bottom-style : solid;/*sets the styleof the border*/
+    border-width : .25rem; /*sets the width of the border*/
+    border-bottom-width: .5rem; /*sets the width of the border-bottom*/
+    border-color :black; /*sets the color of the border*/
+    border-top-color : white; /*sets the color of the border-top*/
 
     border : 1rem solid black;
     border-radius : 1rem;
@@ -156,27 +170,27 @@ header{
 
 }
 .main-section-figure{
-   width : 500px;  
+   
    border-radius : 1rem;
-   text-align: center;
+   text-align: center; /*center-align text*/
   
 
 }
 #relative-path-image{
-    background-color: aliceblue;
-    border : .25rem solid green;
+    background-color: aliceblue;/*sets background color*/
+    border : .25rem solid green; /*border shorthand property width, style colour  */
     color :green;
 }
 #absolute-path-image{
-    background-color: aqua;
-    border : .25rem solid blue;
+    background-color: aqua;/*sets background color*/
+    border : .25rem solid blue; /*border shorthand property width, style colour  */
     color : blue;
 }
 .main-section-figure img{
     width : 80%;
     height : 90%;
     padding : .5rem;
-    border-radius : 1rem;
+    border-radius : 1rem; /*rounds the corners of the border*/
    
 }
 main {
@@ -184,8 +198,153 @@ main {
    
 }
 #quote{
+    
     border : .5rem solid #b58;
+    /*Sets box shawdow*/
     box-shadow: 10px 10px 8px black;
+    /*Specify a horizontal and a vertical shadow*/
+    box-shadow: 10px 10px;
+    box-shadow: 10px 10px lightblue;/* - colour*/
+    box-shadow: 10px 10px 5px lightblue;/* - blur*/
+    box-shadow: 10px 10px 5px 12px lightblue; /* spread radius of the shadow*/
+    
+}
+a{
+    text-decoration: none;
+}
+aside a:hover{
+    color : green;
+}
+nav{
+    background-color: aqua;
+    padding: 0 1rem 2rem 1rem ;
+    margin : 1rem;
+    text-align: center;
+}
+nav ul{ /* applies these styles to all the child <ul> tags in <nav> */
+  
+    padding: 0.25rem ;
+    margin: 0 0.25rem;   
+  
+    
+}
+nav ul li{
+    list-style-type: none;
+    border: 0.1rem solid orange;
+    background-color: white;
+    
 
 }
 
+nav ul li a{
+    color:  orange;
+    font-variant: small-caps;
+    font-size: 1.25rem;
+    background-color: #FFFFFF;
+    display: block;   
+    font-weight: bold;
+    text-decoration: none;   
+}
+nav ul li a:hover { /* styles for the <a> in the sub menu on mouse over */
+    color: white;
+    background-color:orange;
+    border: 0.1rem solid white;
+}
+#home-link{
+    width : 49.5%;
+    float : left;
+}
+#contact-link{
+    width : 49.5%;
+    float : right;
+}
+section ol li{
+    list-style-type: lower-alpha;
+    list-style-type: upper-alpha;
+    list-style-type: lower-roman;
+}
+section ul li{
+    list-style-type: circle;
+    list-style-type: square;
+}
+main{
+    padding : .5rem;
+    margin : .5rem;
+    width : 66%;
+    float : left;
+}
+aside{
+    padding : .5rem;
+    margin : .5rem;
+    width : 26%;
+    float : right;
+}
+
+footer{
+    clear : both;
+}
+
+table, th, td{
+    border : 0.1rem solid black;
+}
+
+input, select, textarea{
+    display :block;
+    padding : .25rem;
+    margin : 0.25rem;
+    width : 50%;
+}
+input[type=radio]{
+    width : 2.5rem;
+    height : 2.5rem;
+}
+input[type=checkbox]{
+    width : 2.5rem;
+    height : 2.5rem;
+}
+fieldset{
+    border: none;
+}
+label, legend{
+    font-weight: 500;
+    color : blueviolet;
+    font-variant: small-caps;
+    font-size : 1.5rem;
+}
+
+@media (max-width: 900px){
+    html{
+        font-size : 15px;
+    }
+    #contact-link{
+        float: none;
+        width : 100%
+    }
+    #home-link{
+        float : none;
+        width : 100%;
+    }
+}
+
+
+@media (max-width: 600px){
+    html{
+        font-size : 12px;
+    }
+    #contact-link{
+        float: none;
+        width : 100%
+    }
+    #home-link{
+        float : none;
+        width : 100%;
+    }
+    main{
+        float : none;
+        width : 100%;
+    }
+    aside{
+        float : none;
+        width : 100%;
+    }
+}
